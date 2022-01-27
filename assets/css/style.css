@@ -1,0 +1,24 @@
+/* Removes the element from being displayed! */
+.hide {
+    display: none;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+#greeting {
+    font-style: italic;
+}
+
+#user-score {
+    margin-bottom: 7px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+#enter-initials {
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
