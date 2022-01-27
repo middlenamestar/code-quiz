@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="assets/css/style.css"/>
-    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>🛑quiz!🛑</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <a href="highscores.html">☆HIGHSCORES☆</a>
+        <p id="timer">Time: 60</p>
+        <div id="question-container" class="hide">
+            <div id="question">question</div>
+            <div id="answer-buttons">
+                <button id="answer-1" class="button">answer_1</button>
+                <button id="answer-2" class="button">answer_2</button>
+                <button id="answer-3" class="button">answer_3</button>
+            </div>
+        </div>
+        <div id="question2-container" class="hide">
+            <div id="question2">question here</div>
+            <div id="question-2-answers">
+                <button id="answer-2-1" class="button">answer</button>
+                <button id="answer-2-2" class="button">answer</button>
+                <button id="answer-2-3" class="button">answer</button>
+            </div>
+        </div>
+        <div id="game-over" class="hide">
+            <h1 id="greeting">well done,</h1>
+            <div id="user-score">your score is: 99</div>
+            <div id="enter-initials">
+                <form>
+                    <label>enter your initials: 
+                        <input>
+                    </label>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+        <button id="start-quiz-button">Start Quiz&hearts;</button>
+    </div>
+
+
+
+    <script src="./assets/js/script.js"></script>
 </body>
+
+
 </html>
