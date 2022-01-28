@@ -58,13 +58,13 @@ var submitButton = document.querySelector("#submit-btn");
 // ]
 
 var questionOne = {
-    question: "what is my favourite fruit?",
-    answers: ["peach", "grape", "apple"],
+    question: "how do you link js to your html?",
+    answers: ["link", "script", "href"],
 };
 
 var questionTwo = {
-    question: "what colour are you?",
-    answers: ["blue", "purple", "yellow"],
+    question: "what could you use to select an element?",
+    answers: ["querySelector", "getElementById", "both!"],
 }
 
 // var questionsGoHere = document.querySelector(".container");
@@ -113,15 +113,15 @@ function firstQuestion(){
     answerThree.textContent = questionOne.answers[2];
 
     answerOne.addEventListener("click", function(){
-        alert("correct!");
-        countdown += 5;
-        score += 1 * 76000;
-        secondQuestion();
-    });
-    answerTwo.addEventListener("click", function(){
         alert("incorrect :(");
         countdown -= 5;
         score -= 1 * 52000;
+        secondQuestion();
+    });
+    answerTwo.addEventListener("click", function(){
+        alert("correct!");
+        countdown += 5;
+        score += 1 * 76000;
         secondQuestion();
     });
     answerThree.addEventListener("click", function(){
@@ -151,15 +151,15 @@ function secondQuestion(){
         Exit();
     });
     answerTwoPointTwo.addEventListener("click", function(){
-        alert("correct!");
-        countdown += 5;
-        score += 76000;
-        Exit();
-    });
-    answerTwoPointThree.addEventListener("click", function(){
         alert("incorrect :(");
         countdown -= 5;
         score -= 1 * 52000;
+        Exit();
+    });
+    answerTwoPointThree.addEventListener("click", function(){
+        alert("correct!");
+        countdown += 5;
+        score += 76000;
         Exit();
     });
 }
