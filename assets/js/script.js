@@ -14,7 +14,9 @@ var timer = document.querySelector("#timer");
 
 var countdown = 60;
 
+var score = 0;
 //thinking i'll do var SCORE = 0; and then some math shit to triple the score, but each time click correct or incorrect the SCORE = 0 will be added to or decreased from.
+
 
 var startQuizButton = document.querySelector("#start-quiz-button");
 var questionContainer = document.querySelector("#question-container"); //question 1
@@ -33,6 +35,7 @@ var answerTwoPointThree = document.querySelector("#answer-2-3");
 
 //Exit page
 var gameOver = document.querySelector("#game-over");
+var submitButton = document.querySelector("#submit-btn");
 
 
 // var questions = [
@@ -112,16 +115,19 @@ function firstQuestion(){
     answerOne.addEventListener("click", function(){
         alert("correct!");
         countdown += 5;
+        score += 1 * 76000;
         secondQuestion();
     });
     answerTwo.addEventListener("click", function(){
         alert("incorrect :(");
         countdown -= 5;
+        score -= 1 * 52000;
         secondQuestion();
     });
     answerThree.addEventListener("click", function(){
         alert("incorrect :(");
         countdown -= 5;
+        score -= 1 * 52000;
         secondQuestion();
     });
 
@@ -141,16 +147,19 @@ function secondQuestion(){
     answerTwoPointOne.addEventListener("click", function(){
         alert("incorrect :(");
         countdown -= 5;
+        score -= 1 * 52000;
         Exit();
     });
     answerTwoPointTwo.addEventListener("click", function(){
         alert("correct!");
         countdown += 5;
+        score += 76000;
         Exit();
     });
     answerTwoPointThree.addEventListener("click", function(){
         alert("incorrect :(");
         countdown -= 5;
+        score -= 1 * 52000;
         Exit();
     });
 }
@@ -160,8 +169,22 @@ function Exit(){
     questionContainer.classList.add("hide");
     questionTwoContainer.classList.add("hide");
     gameOver.classList.remove("hide");
+    document.querySelector("#user-score").textContent = "your score is: " + score;
 }
 
 
 startQuizButton.addEventListener("click", startQuiz)
     // startQuizButton.hidden = true;
+
+submitButton.addEventListener("click", function(event){
+    event.preventDefault();
+    var initials = document.querySelector("#initials").value;
+    score.value;
+    if(initials === ""){
+        alert("pls enter your name, whatever that may be :)<3");
+    } else{
+        alert("🏀🏀🏀 click the link to view highscores ;)");
+        localStorage.setItem("initials", initials);
+        localStorage.setItem("score", score);
+    }
+});
