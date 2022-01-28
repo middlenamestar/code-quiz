@@ -53,11 +53,7 @@ body {
 }
 
 #question, #question2 {
-    line-height: 1.5;
-}
-
-#answer-buttons, #question-2-answers {
-    word-spacing: 5px;
+    line-height: 3;
 }
 
 #home-link {
