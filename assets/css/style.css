@@ -1,9 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Removes the element from being displayed! */
 .hide {
     display: none;
 }
 
-.container {
+body {
     margin: auto;
     width: 100%;
     height: 100px;
@@ -11,14 +15,59 @@
 }
 
 #greeting {
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
 
-#user-score {
-    margin-bottom: 7px;
-    /* font-family: Arial, Helvetica, sans-serif; */
+#big-ballers {
+    color: greenyellow;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+#highscore-display {
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+#quiz-again-btn {
+    margin: 10px;
+}
+
+#highscores-link {
+    display: block;
+    padding: 5px;
+    color: black;
+}
+
+#timer, #question-container, #question2-container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+#user-score, #enter-initials {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    line-height: 2;
+}
+
+#question, #question2 {
+    line-height: 1.5;
+}
+
+#answer-buttons, #question-2-answers {
+    word-spacing: 5px;
+}
+
+#home-link {
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #enter-initials {
-    /* font-family: Arial, Helvetica, sans-serif; */
+    padding-bottom: 5px;
 }
