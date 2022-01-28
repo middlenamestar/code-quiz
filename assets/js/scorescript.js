@@ -1,2 +1,5 @@
 var highscoreDisplay = document.querySelector("#highscore-display");
-console.log("hello");
+var initials = localStorage.getItem("initials");
+var score = localStorage.getItem("score");
+
+highscoreDisplay.textContent = initials + " " + score;
