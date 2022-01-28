@@ -146,5 +146,10 @@ submitButton.addEventListener("click", function(event){
         alert("🏀🏀🏀 click the link to view highscores ;)");
         localStorage.setItem("initials", initials);
         localStorage.setItem("score", score);
+        var initialsSubmit = document.querySelector("#initials");
+        initialsSubmit.value = "";
     }
 });
+
+
+//MAKING NULL DISAPPEAR USING IF STATEMENT ON GETITEM PAGE
