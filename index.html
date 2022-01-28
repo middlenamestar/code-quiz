@@ -10,8 +10,11 @@
 
 <body>
     <div class="container">
-        <a href="highscores.html">☆HIGHSCORES☆</a>
-        <p id="timer">Time: 60</p>
+
+        <a href="highscores.html" id="highscores-link">☆HIGHSCORES☆</a>
+
+        <p id="timer">time: 60</p>
+
         <div id="question-container" class="hide">
             <div id="question">question</div>
             <div id="answer-buttons">
@@ -33,14 +36,15 @@
             <div id="user-score">your score is: 99</div>
             <div id="enter-initials">
                 <form>
-                    <label>enter your initials: 
-                        <input>
+                    <label>leave your mark: 
+                        <input id="initials">
                     </label>
-                    <button>Submit</button>
+                    <button id="submit-btn">Submit</button>
                 </form>
             </div>
+            <a href="index.html" id="home-link">Home.</a>
         </div>
-        <button id="start-quiz-button">Start Quiz&hearts;</button>
+        <button id="start-quiz-button">start quiz&hearts;</button>
     </div>
 
 
