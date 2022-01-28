@@ -7,6 +7,7 @@
     display: none;
 }
 
+/* Centers everything */
 body {
     margin: auto;
     width: 100%;
@@ -14,11 +15,53 @@ body {
     text-align: center;
 }
 
+/* Formatting for Highscores link */
+#highscores-link {
+    display: block;
+    padding: 5px;
+    color: black;
+}
+
+/* Formatting for timer element and question containers */
+#timer, #question-container, #question2-container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+/* Question lines */
+#question, #question2 {
+    font-size: 15px;
+    line-height: 3;
+}
+
+/* Exit Page header */
 #greeting {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
 
+/* Exit page - display final score and enter initials */
+#user-score, #enter-initials {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    line-height: 2;
+    font-size: 15px;
+}
+
+#enter-initials {
+    padding-bottom: 5px;
+}
+
+/* Exit page - link to homepage */
+#home-link {
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Highscores Html Page header */
 #big-ballers {
     color: greenyellow;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -31,39 +74,7 @@ body {
     font-style: italic;
 }
 
+/* Button on highscores page that takes you back to index html */
 #quiz-again-btn {
     margin: 10px;
-}
-
-#highscores-link {
-    display: block;
-    padding: 5px;
-    color: black;
-}
-
-#timer, #question-container, #question2-container {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-}
-
-#user-score, #enter-initials {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-    line-height: 2;
-}
-
-#question, #question2 {
-    line-height: 3;
-}
-
-#home-link {
-    color: black;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#enter-initials {
-    padding-bottom: 5px;
 }

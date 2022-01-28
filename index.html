@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css"/>
-    <title>🛑quiz!🛑</title>
+    <title>🛑Quiz!🛑</title>
 </head>
 
 <body>
     <div class="container">
-
-        <a href="highscores.html" id="highscores-link">☆HIGHSCORES☆</a>
-
+        <!-- Highscore Link -->
+        <a href="highscores.html" id="highscores-link">☆HIGHSCORES☆</a> 
+        <!-- Timer Element -->
         <p id="timer">time: 60</p>
-
+        <!-- Question 1 -->
         <div id="question-container" class="hide">
             <div id="question">question</div>
             <div id="answer-buttons">
@@ -23,6 +23,7 @@
                 <button id="answer-3" class="button">answer_3</button>
             </div>
         </div>
+        <!-- Question 2 -->
         <div id="question2-container" class="hide">
             <div id="question2">question here</div>
             <div id="question-2-answers">
@@ -31,9 +32,10 @@
                 <button id="answer-2-3" class="button">answer</button>
             </div>
         </div>
+        <!-- Exit Page/Enter initials and Final Score Result -->
         <div id="game-over" class="hide">
             <h1 id="greeting">well done,</h1>
-            <div id="user-score">your score is: 99</div>
+            <div id="user-score"></div>
             <div id="enter-initials">
                 <form>
                     <label>leave your mark: 
@@ -44,13 +46,9 @@
             </div>
             <a href="index.html" id="home-link">Home.</a>
         </div>
+        <!-- Start Button -->
         <button id="start-quiz-button">start quiz&hearts;</button>
     </div>
-
-
-
     <script src="./assets/js/script.js"></script>
 </body>
-
-
 </html>
