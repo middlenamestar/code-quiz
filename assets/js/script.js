@@ -49,7 +49,7 @@ function startQuiz(){
 function startTimer(){
     var timerInterval = setInterval(function (){
         countdown--;
-        timer.textContent = "Time: " + countdown;
+        timer.textContent = "time: " + countdown;
         if(countdown === 0){
             clearInterval(timerInterval);
             Exit();
