@@ -11,4 +11,4 @@ Pressing 'Start Quiz' will begin the timer and run the questions. The user has t
 This is the homepage of the quiz. Open the quiz to find the many other pages!
 
 ## Deployment
-Application is deployed with GitHub Pages at: https://middlenamestar.github.io/CodeQuiz/
+Application is deployed with GitHub Pages at: https://middlenamestar.github.io/code-quiz/
